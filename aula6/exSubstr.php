@@ -1,4 +1,5 @@
 <?php
+//igual o execicio 4 da lsita 3
     $data = date("m-d-Y");
     echo $data . "<br>";
     $dia = substr($data,3,2);
