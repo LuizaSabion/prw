@@ -5,7 +5,7 @@ o mês lido. Caso o número digitado não esteja na faixa de 1 .. 12
 escreva uma mensagem informando o usuário do erro da
 digitação. */
 
-switch ($mes=8) {
+switch ($mes=3) {
         
         case 1:
             echo "janeiro";
