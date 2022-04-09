@@ -1,8 +1,7 @@
 <?php 
         /*Crie um script em PHP que a partir de uma data exiba o dia
         da semana (segunda, terça, ...).*/
-
-       
+      
         $hoje = date("w");
         $diaSemana[0] = "Domingo";
         $diaSemana[1] = "Segunda-feira";
@@ -13,7 +12,5 @@
         $diaSemana[6] = "Sábado";
         
         echo "Hoje é: $diaSemana[$hoje]";
-        
-
 
 ?>
