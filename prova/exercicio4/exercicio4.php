@@ -4,7 +4,7 @@
     $cpf = $_POST['cpf'];
     $rg = $_POST['rg'];
     $sexo = $_POST['sexo'];
-    $saldocard = $_POST['saldocard'];
+    $saldoCard = $_POST['saldocard'];
     $compra = $_POST['compra'];
 
     
@@ -21,11 +21,11 @@
         echo "Favor digitar o RG";
         $erro=1;
     }
-    if (strlen($saldocard) < strlen($compra)) {
+    if (strlen($saldoCard) < strlen($compra)) {
         echo "Saldo Insuficiente para Concluir Compra!";
     } 
-    else if (strlen($saldocard) > strlen($compra)){
-        $novoSaldo= $saldocard - $compra;
+    else if (strlen($saldoCard) > strlen($compra)){
+        $novoSaldo = $saldoCard - $compra;
         echo "o novo saldo é de: R$" . $novoSaldo;
     }
 
