@@ -29,5 +29,5 @@
         echo "o novo saldo é de: R$" . $novoSaldo;
     }
 
-    echo "Nome do cliente: " . $nome . "<br>" ."Estado:". $estado  . "<br>" . "CPF:". $cpf . "<br>" ."RG:". $rg . "<br>" . "Sexo:" .$sexo . "<br>" ."saldo do cartão:". $saldocard . "<br>" . "total da compra:" .$compra . "<br>" ."Novo saldo do cartão:". $novoSaldo;
+    echo "Nome do cliente: " . $nome . "<br>" ."Estado:". $estado  . "<br>" . "CPF:". $cpf . "<br>" ."RG:". $rg . "<br>" . "Sexo:" .$sexo . "<br>" ."saldo do cartão:". $saldoCard . "<br>" . "total da compra:" .$compra . "<br>" ."Novo saldo do cartão:". $novoSaldo;
 ?>
