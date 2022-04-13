@@ -21,10 +21,10 @@
         echo "Favor digitar o RG";
         $erro=1;
     }
-    if (starlen($saldocard) < starlen($compra)) {
+    if (strlen($saldocard) < strlen($compra)) {
         echo "Saldo Insuficiente para Concluir Compra!";
     } 
-    else if (starlen($saldocard) > starlen($compra)){
+    else if (strlen($saldocard) > strlen($compra)){
         $novoSaldo= $saldocard - $compra;
         echo "o novo saldo é de: R$" . $novoSaldo;
     }
