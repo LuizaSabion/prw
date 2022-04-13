@@ -4,7 +4,7 @@
     $cpf = $_POST['cpf'];
     $rg = $_POST['rg'];
     $sexo = $_POST['sexo'];
-    $saldoCard = $_POST['saldocard'];
+    $saldoCard = $_POST['saldoCard'];
     $compra = $_POST['compra'];
 
     
