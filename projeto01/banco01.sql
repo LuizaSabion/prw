@@ -1,4 +1,4 @@
--- Drop banco de dados
+-- Drop banco de dados teste
 -- drop database projeto01;
 
 -- criação do banco de dados
