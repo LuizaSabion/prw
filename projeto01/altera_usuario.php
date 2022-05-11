@@ -1,7 +1,7 @@
 <?php
     include('conexao.php');
     $id_usuario = $_GET['id_usuario'];
-    $sql = 'SELECT *FROM usuario where id_usuario =' . $id_usuario;
+    $sql = 'SELECT * FROM usuario where id_usuario =' . $id_usuario;
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
 ?>
@@ -17,7 +17,8 @@
 <body>
     <h2>Alteração de Usuário</h2>
     <hr>
-    <form method="post" action="cadastro_usuario.php">
+    <form method="post" action="altera_usuario_exe.php">
+        
         <div>
             <label for="nome_usuario">Usuario:</label>
             <input name="nome_usuario" type="text" size="50"
@@ -37,6 +38,7 @@
         <div>            
             <button  type="submit">Entrar</button>
         </div>
+        <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
     </form>    
 </body>
 </html>
