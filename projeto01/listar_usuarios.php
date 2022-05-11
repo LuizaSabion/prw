@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>Listagem de Usuários</title>
+    <title>Listagem de Usuários </title>
 </head>
 <body>
     <h1>Listagem de Usuários</h1>
