@@ -16,8 +16,9 @@
 </head>
 <body>
     <h2>Alteração de Usuário</h2>
+    <?php echo "<img class='center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' align='center' width='150' height='150'/>"; ?>           <div id="teste">
     <hr>
-    <form method="post" action="altera_usuario_exe.php">
+    <form method="post" action="altera_usuario_exe.php" enctype='multipart/form-data'>
         
         <div>
             <label for="nome_usuario">Usuario:</label>
@@ -35,8 +36,12 @@
             value ="<?php echo $row['telefone_usuario'] ?>" placeholder="Digite o novo telefone:">
         </div>
        
+        <div class="form-item">
+                    <input type="file" id="foto" name="foto" accept="image/*" />
+        </div>     
+       
         <div>            
-            <button  type="submit">Entrar</button>
+            <button  type="submit">Cadastar</button>
         </div>
         <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
     </form>    
