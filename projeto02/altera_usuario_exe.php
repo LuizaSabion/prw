@@ -22,8 +22,10 @@
     $nome = $_POST['nome_usuario'];
     $email = $_POST['email_usuario'];
     $telefone = $_POST['telefone_usuario'];
+    
     echo "<h1> Alteração de dados </h1>";
     echo "<p> Nome usuario: " . $nome . "<p>";
+    
     if (strlen($fotoNome) > 0) {
       $sql = "UPDATE usuario SET
             nome_usuario='".$nome."',
