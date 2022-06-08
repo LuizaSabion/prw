@@ -1,13 +1,13 @@
 <?php
     $hostname = "localhost";
-    $port     = 3307;
+    $port     = 3306;
     $username = "root";
     $password = "";
-    $database = "lista06";
-    $con = mysqli_connect($hostname, $username, $password,$database, $port);
+    $database = "estudos";
+    $con = mysqli_connect($hostname, $username, $password, $database, $port);
     if (mysqli_connect_errno()){
         printf("Erro ao conectar ao banco de dados: %s\n", mysqli_connect_error());
         exit;
     }
-    #printf("Banco de dados conectado com sucesso \o/")
+    printf("Banco de dados conectado com sucesso \o/")
 ?>

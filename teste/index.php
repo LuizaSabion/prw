@@ -12,8 +12,8 @@
     <h1>Menu Principal</h1>
     <div id="menu">
         <ul>
-            <li><a href= "cadastro_agenda.html">Cadastrar Contato</a></li>
-            <li><a href= "listar_agenda.php">Listar Contatos</a></li>
+            <li><a href= "cadastro_cronograma.html">Cadastrar Cronograma</a></li>
+            <li><a href= "listar_cronograma.php">Listar Cronograma</a></li>
 
         </ul>
     </div>

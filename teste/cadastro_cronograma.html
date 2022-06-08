@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA -Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estudos </title>
+</head>
+<body>
+    <h2>Cronograma </h2>
+    <hr>
+    <form method="post" action="cadastro_cronograma.php">
+        <div>
+            <label for="conteudo">Conteudo:</label>
+            <input name="conteudo" type="text" size="150">
+        </div>
+        <div>
+            <label for="materia">Materia:</label>
+            <input name="materia" type="text" size="50">
+        </div>
+
+        <div>
+            <label for="dia">Dia:</label>
+            <input name="dia" type="date" >
+        </div>
+
+        <div>
+            <label for="anotacoes">Anotações:</label>
+            <input name="anotacoes" type="text" size="1000">
+        </div>
+
+        <div>
+            <label for="horario">Horario:</label>
+            <input name="horario" type="time" >
+        </div>
+
+        <div>
+            <input type="file" id="foto" name="foto" accept="image/*" />
+            
+        </div>
+
+        <div>
+            <button type="submit">Cadastar</button>
+        </div>
+
+        <div>
+            <button type="submit">Voltar ao menu inicial</button>
+        </div>
+    </form>
+</body>
+</html>
