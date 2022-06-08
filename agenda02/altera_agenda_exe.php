@@ -46,7 +46,7 @@
 
 
     if (strlen($fotoNome) > 0) {
-    $sql = "UPDATE contatos SET
+    $sql = "UPDATE cadastro SET
             nome = '". $nome ."',
             apelido = '" . $apelido . "',
             endereco = '" . $endereco . "',
@@ -63,7 +63,7 @@
     }
     else
     {
-        $sql = "UPDATE contatos SET
+        $sql = "UPDATE cadastro SET
             nome = '". $nome ."',
             apelido = '" . $apelido . "',
             endereco = '" . $endereco . "',

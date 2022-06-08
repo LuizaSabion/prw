@@ -1,7 +1,7 @@
 <?php
     include('conexao.php');
     $id_agenda = $_GET['id_agenda'];
-    $sql = 'SELECT * FROM contatos where id_agenda =' . $id_agenda;
+    $sql = 'SELECT * FROM cadastro where id_agenda =' . $id_agenda;
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
 ?>

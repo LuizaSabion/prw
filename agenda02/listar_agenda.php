@@ -1,6 +1,6 @@
 <?php
     include ('conexao.php');
-    $sql = 'SELECT * FROM contatos';
+    $sql = 'SELECT * FROM cadastro';
 
     //retornar os dados da culsulta
     $result = mysqli_query($con, $sql);

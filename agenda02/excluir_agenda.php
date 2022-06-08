@@ -3,7 +3,7 @@
 
     $id_agenda = $_GET['id_agenda'];
 
-    $sql = 'DELETE FROM contatos WHERE id_agenda ='.$id_agenda;
+    $sql = 'DELETE FROM cadastro WHERE id_agenda ='.$id_agenda;
 
     echo "<h1> Exclusão de Contato </h1>";
     $result = mysqli_query($con, $sql);

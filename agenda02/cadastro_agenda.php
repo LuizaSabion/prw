@@ -40,7 +40,7 @@
     echo "Email: " . $email . "<br>";
     echo "Data do Cadastro: " . $dt_cadastro . "</p>";
 
-    $sql = "INSERT INTO contatos (nome, apelido, endereco, bairro, cidade, estado, telefone, celular, email, dt_cadastro, foto_blob, foto_nome)
+    $sql = "INSERT INTO cadastro (nome, apelido, endereco, bairro, cidade, estado, telefone, celular, email, dt_cadastro, foto_blob, foto_nome)
             VALUES ('". $nome."', '". $apelido ."', '" . $endereco ."', '". $bairro . "', '" .  $cidade ."', '" . $estado . "', '" . $telefone . "', '" . $celular . "', '". $email . "', '". $dt_cadastro."', '" . $fotoBlob ."', '" . $fotoNome. "')";
 
     $result = mysqli_query($con, $sql);
