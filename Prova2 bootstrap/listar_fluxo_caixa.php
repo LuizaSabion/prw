@@ -16,16 +16,18 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Prova2</title>
         
 </head>
 <body>
 
     <h1 align="center">Listagem do fluxo de caixa</h1><br>
-    <table align="center" border="1" width="700">
-        
-        <tr>
-            <th>Código</th>
+    <table align="center" border="1" width="700" class="table ">
+    
+    <thead class="thead-dark">
+        <tr >
+            <th >Código</th>
             <th>Data</th>
             <th>Tipo</th>
             <th>Valor</th>
@@ -33,10 +35,12 @@
             <th>Cheque</th>
             <th>Excluir</th>
         </tr>
+        </thead>
+    
 
         <?php 
             while ($row = mysqli_fetch_array($result)) {
-                echo "<tr>";
+                echo "<tr class='table-dark'>";
                 echo "<td>" .$row['id']. "</td>";
                 echo "<td><a href='altera_fluxo_caixa.php?id=".$row['id']."'>" .$row['data']. "</a></td>";
                 echo "<td>" .$row['tipo']. "</td>";

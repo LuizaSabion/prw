@@ -1,7 +1,7 @@
 <?php
    include('conexao.php');
    $id = $_GET['id'];
-   $sql = 'SELECT * FROM prova2 where id='.$id;
+   $sql = 'SELECT * FROM fluxo_caixa where id='.$id;
    $result = mysqli_query($con, $sql);
    $row = mysqli_fetch_array($result);
 ?>
@@ -15,6 +15,7 @@
     <title>Prova2</title>
 </head>
 <body>
+    
     <h1>Fluxo do caixa</h1>
     <div id="teste">
         <form method="post" action="altera_fluxo_caixa_exe.php">
@@ -24,9 +25,10 @@
                     <label for="data">Data::</label>
                     <input type="date" id="data" name="data" value="<?php echo $row['data']?>" placeholder="Digite a data do cadastro">
                 </div>
-                <div class="form-item">
-                    <label for="tipo">Tipo</label>
-                    <input type="radio" id="tipo" name="tipo" value="<?php echo $row['tipo']?>" placeholder="Digite o tipo">
+                <div>
+                    <label for="tipo">Tipo:</label>
+                    <input type="radio" id="tipo" name="tipo" value="entrada" >Entrada
+                    <input type="radio" id="tipo" name="tipo" value="saida">Saida 
                 </div>
                 <div class="form-item">
                     <label for="Valor">Valor:</label>

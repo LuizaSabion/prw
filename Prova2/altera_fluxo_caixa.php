@@ -1,7 +1,7 @@
 <?php
    include('conexao.php');
    $id = $_GET['id'];
-   $sql = 'SELECT * FROM prova2 where id='.$id;
+   $sql = 'SELECT * FROM fluxo_caixa where id='.$id;
    $result = mysqli_query($con, $sql);
    $row = mysqli_fetch_array($result);
 ?>
@@ -26,7 +26,9 @@
                 </div>
                 <div class="form-item">
                     <label for="tipo">Tipo</label>
-                    <input type="radio" id="tipo" name="tipo" value="<?php echo $row['tipo']?>" placeholder="Digite o tipo">
+                    
+                    <input type="radio" id="tipo" name="tipo" value="entrada" <?php if ($row['tipo'] =='entrada'){echo "checked";}?>> Entrada
+                    <input type="radio" id="tipo" name="tipo" value="saida" <?php if ($row['tipo'] =='saida'){echo "checked";}?>>Saída
                 </div>
                 <div class="form-item">
                     <label for="Valor">Valor:</label>
@@ -45,7 +47,7 @@
                     <a href='index.php'> Voltar</a>
                 </div>
                 <input name="id" type="hidden" value="<?php echo $row['id']?>">
-            </fieldset>checkbox
+            </fieldset>
         </form>
     </div>
 </body>
