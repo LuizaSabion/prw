@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA -Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Prova2</title>
+</head>
+<body>
+    <h1>Cadastro do Fluxo do Caixa </h1>
+    <hr>
+    <form method="post" action="cadastro_fluxo_caixa.php" enctype="multipart/form-data">
+        <div>
+            <label for="data">Data:</label>
+            <input name="data" type="date" >
+        </div>
+        
+        <div>
+            <label for="tipo">Tipo:</label>
+            <input type="radio" id="tipo" name="tipo" value="entrada">Entrada
+            <input type="radio" id="tipo" name="tipo" value="saida">Saida 
+        </div>
+
+        <div>
+            <label for="valor">Valor:</label>
+            <input name="valor" type="decimal">
+        </div>
+
+        <div>
+            <label for="historico">Historico:</label>
+            <input name="historico" type="text" size="150">
+        </div>
+
+        <div>
+            
+            <label for="cheque">Cheque:</label>
+            <select name="cheque" id="cheque">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            
+        </div>
+        
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+
+    </form>
+</body>
+</html>
