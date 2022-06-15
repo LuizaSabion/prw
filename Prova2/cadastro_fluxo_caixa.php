@@ -6,7 +6,7 @@
     $historico = $_POST['historico'];
     $cheque = $_POST['cheque'];
 
-    if ($tipo=='entrada') {
+   /* if ($tipo=='entrada') {
         echo "Entrada";
     }
     else {
@@ -18,7 +18,7 @@
     }
     else {
         echo "Não";
-    }
+    }*/
     
     echo "<p>Data: ". $data ."<br>";
     echo "Tipo: " . $tipo . "<br>";

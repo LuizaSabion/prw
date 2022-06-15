@@ -10,14 +10,19 @@
 </head>
 <body>
     <h1>Consulta de fluxo de caixa</h1>
+    <form method="post" action="consulta_fluxo_caixa.php">
     <div id="menu">
         <ul>
             <label for="consulta">Tipo de consulta:</label>
-            <input type="radio" id="consulta" name="consulta" value="saldoTotal">Saldo Total
-            <input type="radio" id="consulta" name="consulta" value="totalSaidas">Total Saidas
-            <input type="radio" id="consulta" name="consulta" value="totalEntradas">Total Entradas
+            <input type="radio" id="consulta" name="tipo" value="saldo"> Saldo Total</a>
+            <input type="radio" id="consulta" name="tipo" value="saida">Total Saidas</a>
+            <input type="radio" id="consulta" name="tipo" value="entrada">Total Entradas</a>
             
         </ul>
     </div>
+    <div>
+        <button type="submit">Enviar</button>
+    </div>
+    </form>
 </body>
 </html>
